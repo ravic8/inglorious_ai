@@ -10,6 +10,7 @@ export type Project = {
   tech?: string[];
   links?: { repo?: string; demo?: string; docs?: string };
   featured?: boolean;
+  visibility?: "public" | "private";
 };
 
 const PROJ_DIR = path.join(process.cwd(), "content", "projects");

@@ -2,12 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Theme: use a uniform light background site-wide */
 :root { color-scheme: light dark; }
-body { @apply bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100; }
-a { @apply text-blue-600 dark:text-blue-400 underline-offset-4 hover:underline; }
-.container { @apply max-w-3xl mx-auto px-4; }
-.prose h1 { @apply text-3xl font-bold mt-8 mb-4; }
-.prose h2 { @apply text-2xl font-semibold mt-6 mb-3; }
-.prose p { @apply my-4 leading-7; }
-.prose pre { @apply p-4 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-auto; }
+body { @apply bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100; }
+
+/* Layout */
+.container { @apply mx-auto w-full max-w-6xl px-6; }
+/* Same vertical rhythm for all sections (top and bottom) */
+.section { @apply py-16 md:py-20; }
+
+/* Text */
+.lead { @apply text-lg md:text-xl text-neutral-700 dark:text-neutral-300; }
+
+/* Accent (emerald; change here if you want another brand color) */
+.accent       { @apply text-emerald-600 dark:text-emerald-400; }
+.hover-accent { @apply transition hover:text-emerald-600 dark:hover:text-emerald-400; }
+.hover-ring   { @apply transition hover:ring-2 hover:ring-emerald-500/30; }
+
+/* Prose defaults (for blog/markdown areas) */
+.prose h1 { @apply text-4xl font-bold mt-8 mb-4 md:text-5xl; }
+.prose h2 { @apply text-3xl font-semibold mt-6 mb-3; }
+.prose p  { @apply my-4 leading-7 text-lg md:text-xl; }
+.prose pre{ @apply p-4 rounded-lg bg-neutral-100 dark:bg-neutral-900 overflow-auto; }
+
+/* Cards */
+.card { @apply rounded-2xl border border-neutral-200 bg-white shadow-[0_1px_0_0_rgba(0,0,0,0.04),0_20px_50px_-20px_rgba(0,0,0,0.25)] dark:border-neutral-800 dark:bg-neutral-900; }
+
+/* Buttons */
+.btn         { @apply inline-flex items-center justify-center rounded-lg px-6 py-3 text-base md:text-lg font-medium transition; }
+.btn-primary { @apply bg-neutral-900 text-white hover:opacity-90 dark:bg-white dark:text-black; }
+.btn-outline { @apply border hover:bg-neutral-100 dark:hover:bg-neutral-900; }
+
+/* Round icon buttons */
+.icon-btn { @apply inline-flex h-12 w-12 items-center justify-center rounded-full border hover:bg-neutral-100 dark:hover:bg-neutral-900 hover:ring-2 hover:ring-emerald-500/30; }
+
+/* Helper to align social icons with the portrait's left edge on desktop.
+   Tune the padding if you change grid spans. */
+.align-with-portrait { @apply md:pl-8 lg:pl-12; }

@@ -1,0 +1,8 @@
+title: c8-airflow — Production DAGs & Utilities
+summary: Reusable operators/sensors, deployment patterns, and observability for Airflow at Chain8.
+role: Lead Data Engineer
+tech: [Python, Airflow, AWS, Docker]
+links:
+  repo: "https://github.com/ravic8/c8-airflow"   # real URL
+featured: true
+slug: c8-airflow

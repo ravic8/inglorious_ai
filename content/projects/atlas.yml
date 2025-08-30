@@ -1,0 +1,10 @@
+title: Atlas — Data Engineering Observer
+summary: Airflow + ClickHouse + Slack automation with MLflow hooks for pipeline/model observability.
+role: Architect / Lead Dev
+tech: [Python, FastAPI, Airflow, ClickHouse, MLflow]
+links:
+  repo: "https://github.com/chain8-org/atlas"   # private org repo (will 404 for others)
+  docs: "/blog/atlas-case-study"                # a case-study post on your site
+  demo: ""                                      # optional later
+visibility: private
+slug: atlas

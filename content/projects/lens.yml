@@ -1,0 +1,8 @@
+title: Lens — Algorithmic Trading Lab
+summary: 10–20 ms low-latency streams (Kafka/WebSockets), historical lake on S3, Redshift/Spark backtesting.
+role: Data Engineer / Research
+tech: [Kafka, WebSockets, Python, S3, Redshift, Spark]
+links:
+  repo: "https://github.com/ravic8/lens"         # real URL
+featured: false
+slug: lens

@@ -1,0 +1,8 @@
+title: c8-datalake — Data Lake & Ingestion
+summary: S3/Glue/RDS pipelines with Step Functions/Lambda for near real-time sync; Redshift warehouse.
+role: Data Engineer
+tech: [AWS S3, Glue, Lambda, Step Functions, Redshift, Python]
+links:
+  repo: "https://github.com/ravic8/c8-datalake"  # real URL
+featured: false
+slug: c8-datalake

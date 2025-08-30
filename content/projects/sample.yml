@@ -1,9 +1,0 @@
-title: Atlas — Data Engineering Observer
-summary: Airflow + ClickHouse + Slack automation with digests and incident tracking.
-role: Architect / Lead Dev
-tech: [Python, FastAPI, Airflow, ClickHouse, LangGraph]
-links:
-  repo: "https://github.com/chain8-org/atlas"
-  demo: ""
-featured: true
-slug: atlas
